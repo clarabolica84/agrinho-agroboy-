@@ -1,0 +1,192 @@
+/* ============================= */
+/* RESET E CONFIGURAÇÕES GLOBAIS */
+/* ============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* ============================= */
+/* HEADER E NAVEGAÇÃO */
+/* ============================= */
+header {
+    background-color: #2a7f62;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4d35e;
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+.hero {
+    background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    padding: 10px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4d35e;
+    color: #2a7f62;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-content button:hover {
+    transform: scale(1.05);
+}
+
+/* ============================= */
+/* SEÇÃO MÁQUINAS */
+/* ============================= */
+.maquinas {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.maquinas h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.maquinas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.maquina-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.maquina-card img {
+    width: 100%;
+    display: block;
+}
+
+.maquina-card h3 {
+    margin: 15px 0 10px;
+    color: #2a7f62;
+}
+
+.maquina-card p {
+    padding: 0 15px 15px;
+}
+
+.maquina-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* ============================= */
+/* SEÇÃO CONTATO */
+/* ============================= */
+.contato {
+    background-color: #2a7f62;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contato .contact-btn {
+    padding: 10px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4d35e;
+    color: #2a7f62;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contato .contact-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+footer {
+    background-color: #1f5f46;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* ============================= */
+/* ANIMAÇÕES */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================= */
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
